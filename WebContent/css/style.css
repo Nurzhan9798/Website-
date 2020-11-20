@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: pink;
+  padding: 20px;
+  text-align: center;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  border: 1px solid black;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+}
+
+.content {
+  display: flex;
+}
+/* 
+.content table {
+  margin-top: 10px;
+}*/
+
+.content article {
+  padding: 20px;
+  min-height: 1000px;
+}
+
+.content .sidebar {
+  background-color: yellow;
+  width: 100px;
+  text-align: center;
+}
+
+.content .sidebar a {
+  text-decoration: none;
+}
+
+.content .sidebar #users {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.content .main {
+  width: calc(100% - 100px);
+  background-color: lightskyblue;
+}
+
+.content .main h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content .main #new__post {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.content .main #new__post textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 2px;
+}
+
+.content .main #new__post button {
+  background-color: green;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+/* 
+.content .main input {
+  padding: 5px 10px;
+  cursor: pointer;
+} */
+
+.content .main #post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#avatar {
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  background-image: url("avatar.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Post */
+.content .main #post #post__title {
+  display: flex;
+}
+
+.content .main #post #post__title h3 {
+  color: blue;
+}
+
+.content .main #post #post__title p {
+  color: gray;
+  font-size: 15px;
+}
+
+.content .main #post #post__desciption {
+  padding: 10px 0;
+}
+
+/* Comment */
+.content .main #comment {
+  margin-bottom: 10px;
+}
+
+.content .main #post #comment__content h4 {
+  color: blue;
+  font-size: 15px;
+}
+
+.content .main #post #comment__content {
+  display: flex;
+}
+
+.content .main #post #comment__content span {
+  font-size: 13px;
+  color: gray;
+}
+
+.content .main #post #comment__content #avatar {
+  width: 40px;
+}
+
+.content .main #post #comment__content div {
+  width: calc(100% - 40px);
+}
+
+.content .main #post #comment__content__post {
+  display: flex;
+  align-items: center;
+}
+
+/* new Comment */
+.content .main #post #comment__content__post textarea {
+  margin-right: 10px;
+  width: 100%;
+  font-size: 15px;
+  padding: 5px 2px;
+}
+
+.content .main #post #comment__content__post button {
+  padding: 5px;
+}
+
+footer {
+  background-color: violet;
+  padding: 10px;
+  text-align: center;
+}
